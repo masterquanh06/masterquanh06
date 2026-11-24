@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:10B981&height=180&section=header&text=MasterQuanh&fontSize=55&fontColor=ffffff&fontAlignY=38" width="100%" alt="MasterQuanh Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,55:7F1D1D,100:DC2626&height=180&section=header&text=AKIRA&fontSize=60&fontColor=ffffff&fontAlignY=38" width="100%" alt="AKIRA Header" />
 </p>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=800&color=10B981&center=true&vCenter=true&width=620&lines=I'm+a+Developer+and+also+a+Trader;Full-Stack+Engineer+%26+Trading+Systems+Builder;Founder+%26+Private+Fund+Manager" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=800&color=EF4444&center=true&vCenter=true&width=620&lines=I'm+a+Developer+and+also+a+Trader;Full-Stack+Engineer+%26+Trading+Systems+Builder;Founder+%26+Private+Fund+Manager" alt="Typing SVG" />
   </a>
 </p>
 
