@@ -20,14 +20,14 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  <a href="https://www.facebook.com/your-facebook" target="_blank" rel="noreferrer">
+  <a href="https://www.facebook.com/AkiraSan2004/" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="masterquanh06 Facebook" height="30" width="40" />
   </a>
-  <a href="https://www.youtube.com/@your-youtube" target="_blank" rel="noreferrer">
+  <a href="https://www.youtube.com/channel/UCn1wNhcEM-cBC6D_tCL3HMA" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="masterquanh06 YouTube" height="30" width="40" />
   </a>
-  <a href="https://discord.gg/your-discord" target="_blank" rel="noreferrer">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="masterquanh06 Discord" height="30" width="40" />
+  <a href="https://t.me/MasterQuanh" target="_blank" rel="noreferrer">
+    <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="masterquanh06 Telegram" height="30" width="40" />
   </a>
 </p>
 
