@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="I'm a Developer and also a Trader — Software Engineer, Systematic Trader, Founder &amp; Fund Manager">
+  <defs>
+    <!-- Clip to rounded card -->
+    <clipPath id="card-clip">
+      <rect x="1" y="1" width="1198" height="318" rx="12" />
+    </clipPath>
+
+    <!-- Subtle institutional ambient glow behind equity curve -->
+    <radialGradient id="emerald-glow" cx="84%" cy="32%" r="42%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.14" />
+      <stop offset="55%" stop-color="#10B981" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="gold-glow" cx="14%" cy="24%" r="36%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.07" />
+      <stop offset="65%" stop-color="#D4AF37" stop-opacity="0.01" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Equity curve area fill -->
+    <linearGradient id="equity-area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Equity curve stroke gradient (subtle fade-in on left, crisp emerald to peak) -->
+    <linearGradient id="equity-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="28%" stop-color="#10B981" stop-opacity="0.65" />
+      <stop offset="85%" stop-color="#10B981" stop-opacity="1" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Left-side text readability scrim -->
+    <linearGradient id="left-scrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0.90" />
+      <stop offset="60%" stop-color="#0D1117" stop-opacity="0.65" />
+      <stop offset="85%" stop-color="#0D1117" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Subtle hairline divider gradient -->
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0.85" />
+      <stop offset="65%" stop-color="#30363D" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Subtle coordinate grid pattern -->
+    <pattern id="coord-grid" width="48" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 40" fill="none" stroke="#21262D" stroke-width="0.75" />
+    </pattern>
+
+    <!-- Soft glow for live terminal node -->
+    <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#card-clip)">
+    <!-- Base GitHub Dark Canvas -->
+    <rect width="1200" height="320" fill="#0D1117" />
+
+    <!-- Ambient Glows -->
+    <rect width="1200" height="320" fill="url(#emerald-glow)" />
+    <rect width="1200" height="320" fill="url(#gold-glow)" />
+
+    <!-- Subtle Coordinate Grid -->
+    <rect width="1200" height="320" fill="url(#coord-grid)" opacity="0.72" />
+
+    <!-- Reference Dashed Horizon Lines -->
+    <line x1="640" y1="80" x2="1156" y2="80" stroke="#30363D" stroke-width="0.75" stroke-dasharray="3 6" opacity="0.55" />
+    <line x1="600" y1="140" x2="1156" y2="140" stroke="#30363D" stroke-width="0.75" stroke-dasharray="3 6" opacity="0.45" />
+    <line x1="560" y1="200" x2="1156" y2="200" stroke="#30363D" stroke-width="0.75" stroke-dasharray="3 6" opacity="0.45" />
+
+    <!-- Subtle Candlesticks / OHLC Structure (Right Quadrant) -->
+    <g opacity="0.36">
+      <!-- Candle 1 (bull) -->
+      <line x1="744" y1="186" x2="744" y2="216" stroke="#10B981" stroke-width="1" />
+      <rect x="740" y="194" width="8" height="14" rx="1" fill="#10B981" />
+      <!-- Candle 2 (pullback) -->
+      <line x1="768" y1="190" x2="768" y2="212" stroke="#6E7681" stroke-width="1" />
+      <rect x="764" y="195" width="8" height="10" rx="1" fill="#30363D" stroke="#6E7681" stroke-width="0.7" />
+      <!-- Candle 3 (bull) -->
+      <line x1="792" y1="174" x2="792" y2="204" stroke="#10B981" stroke-width="1" />
+      <rect x="788" y="180" width="8" height="16" rx="1" fill="#10B981" />
+      <!-- Candle 4 (bull) -->
+      <line x1="816" y1="160" x2="816" y2="188" stroke="#10B981" stroke-width="1" />
+      <rect x="812" y="166" width="8" height="14" rx="1" fill="#10B981" />
+      <!-- Candle 5 (pullback) -->
+      <line x1="840" y1="162" x2="840" y2="186" stroke="#6E7681" stroke-width="1" />
+      <rect x="836" y="168" width="8" height="11" rx="1" fill="#30363D" stroke="#6E7681" stroke-width="0.7" />
+      <!-- Candle 6 (bull) -->
+      <line x1="864" y1="148" x2="864" y2="178" stroke="#10B981" stroke-width="1" />
+      <rect x="860" y="154" width="8" height="17" rx="1" fill="#10B981" />
+      <!-- Candle 7 (bull) -->
+      <line x1="888" y1="138" x2="888" y2="164" stroke="#10B981" stroke-width="1" />
+      <rect x="884" y="144" width="8" height="13" rx="1" fill="#10B981" />
+      <!-- Candle 8 (consolidation) -->
+      <line x1="912" y1="140" x2="912" y2="162" stroke="#6E7681" stroke-width="1" />
+      <rect x="908" y="146" width="8" height="9" rx="1" fill="#30363D" stroke="#6E7681" stroke-width="0.7" />
+      <!-- Candle 9 (breakout bull) -->
+      <line x1="936" y1="118" x2="936" y2="152" stroke="#10B981" stroke-width="1" />
+      <rect x="932" y="124" width="8" height="20" rx="1" fill="#10B981" />
+      <!-- Candle 10 (bull) -->
+      <line x1="960" y1="108" x2="960" y2="134" stroke="#10B981" stroke-width="1" />
+      <rect x="956" y="114" width="8" height="12" rx="1" fill="#10B981" />
+      <!-- Candle 11 (pullback) -->
+      <line x1="984" y1="110" x2="984" y2="136" stroke="#6E7681" stroke-width="1" />
+      <rect x="980" y="116" width="8" height="11" rx="1" fill="#30363D" stroke="#6E7681" stroke-width="0.7" />
+      <!-- Candle 12 (bull) -->
+      <line x1="1008" y1="92" x2="1008" y2="124" stroke="#10B981" stroke-width="1" />
+      <rect x="1004" y="98" width="8" height="18" rx="1" fill="#10B981" />
+      <!-- Candle 13 (bull) -->
+      <line x1="1032" y1="84" x2="1032" y2="108" stroke="#10B981" stroke-width="1" />
+      <rect x="1028" y="88" width="8" height="13" rx="1" fill="#10B981" />
+      <!-- Candle 14 (consolidation) -->
+      <line x1="1056" y1="86" x2="1056" y2="106" stroke="#6E7681" stroke-width="1" />
+      <rect x="1052" y="90" width="8" height="9" rx="1" fill="#30363D" stroke="#6E7681" stroke-width="0.7" />
+      <!-- Candle 15 (bull) -->
+      <line x1="1080" y1="68" x2="1080" y2="96" stroke="#10B981" stroke-width="1" />
+      <rect x="1076" y="74" width="8" height="16" rx="1" fill="#10B981" />
+      <!-- Candle 16 (peak bull) -->
+      <line x1="1104" y1="58" x2="1104" y2="82" stroke="#10B981" stroke-width="1" />
+      <rect x="1100" y="63" width="8" height="13" rx="1" fill="#10B981" />
+    </g>
+
+    <!-- Equity Curve Area Fill -->
+    <path
+      d="M 500 242 C 540 238, 575 232, 610 226 C 645 220, 672 225, 704 214 C 736 203, 760 206, 792 186 C 824 166, 848 176, 876 154 C 904 132, 926 144, 954 120 C 982 96, 1006 112, 1034 90 C 1062 68, 1084 78, 1116 62 L 1116 244 L 500 244 Z"
+      fill="url(#equity-area)"
+    />
+
+    <!-- Secondary Benchmark / Alpha Reference Line (Muted Gold) -->
+    <path
+      d="M 520 242 C 580 238, 635 234, 695 226 C 755 218, 815 208, 880 194 C 945 180, 1020 162, 1116 140"
+      fill="none"
+      stroke="#D4AF37"
+      stroke-width="1.2"
+      stroke-dasharray="4 5"
+      opacity="0.48"
+    />
+
+    <!-- Primary Equity Curve Line (Emerald) -->
+    <path
+      d="M 500 242 C 540 238, 575 232, 610 226 C 645 220, 672 225, 704 214 C 736 203, 760 206, 792 186 C 824 166, 848 176, 876 154 C 904 132, 926 144, 954 120 C 982 96, 1006 112, 1034 90 C 1062 68, 1084 78, 1116 62"
+      fill="none"
+      stroke="url(#equity-stroke)"
+      stroke-width="2.3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Terminal Peak Marker -->
+    <circle cx="1116" cy="62" r="7.5" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.55" />
+    <circle cx="1116" cy="62" r="3.8" fill="#10B981" filter="url(#node-glow)" />
+
+    <!-- Right-side Minimal Axis Labels -->
+    <g font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="9.5" fill="#484F58" text-anchor="end">
+      <text x="1166" y="83">3.0σ</text>
+      <text x="1166" y="143">2.0σ</text>
+      <text x="1166" y="203">1.0σ</text>
+    </g>
+
+    <!-- Left Scrim for Crisp Typography Separation -->
+    <rect width="780" height="320" fill="url(#left-scrim)" />
+
+    <!-- Top Gold Accent Rule & Institutional Eyebrow -->
+    <line x1="64" y1="84" x2="96" y2="84" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" />
+    <text
+      x="108"
+      y="88"
+      font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      font-size="11.5"
+      font-weight="600"
+      letter-spacing="2.4"
+      fill="#D4AF37"
+    >MASTERQUANH06  //  QUANTITATIVE SYSTEMS &amp; CAPITAL</text>
+
+    <!-- Main Typography -->
+    <text
+      x="64"
+      y="148"
+      font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+      font-size="38"
+      font-weight="700"
+      letter-spacing="-0.6"
+      fill="#F0F6FC"
+    >I'm a Developer and also a Trader</text>
+
+    <!-- Subtitle -->
+    <text
+      x="64"
+      y="188"
+      font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      font-size="13"
+      font-weight="500"
+      letter-spacing="1.5"
+      fill="#8B949E"
+    >SOFTWARE ENGINEER<tspan fill="#D4AF37">  ·  </tspan>SYSTEMATIC TRADER<tspan fill="#D4AF37">  ·  </tspan>FOUNDER &amp; FUND MANAGER</text>
+
+    <!-- Bottom Hairline Divider -->
+    <line x1="64" y1="244" x2="1136" y2="244" stroke="url(#divider-grad)" stroke-width="1" />
+
+    <!-- Bottom Telemetry Footer -->
+    <circle cx="69" cy="272" r="3.5" fill="#10B981" />
+    <text
+      x="84"
+      y="276"
+      font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      font-size="10.5"
+      letter-spacing="1.6"
+      fill="#6E7681"
+    >ARCHITECTURE<tspan fill="#30363D">  /  </tspan>SYSTEMATIC EXECUTION<tspan fill="#30363D">  /  </tspan>PORTFOLIO RISK</text>
+
+    <text
+      x="1136"
+      y="276"
+      text-anchor="end"
+      font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      font-size="10.5"
+      letter-spacing="1.5"
+      fill="#6E7681"
+    >STATUS: <tspan fill="#10B981">OPERATIONAL</tspan></text>
+  </g>
+
+  <!-- Crisp Outer Border -->
+  <rect x="1" y="1" width="1198" height="318" rx="12" fill="none" stroke="#30363D" stroke-width="1.2" />
+</svg>
