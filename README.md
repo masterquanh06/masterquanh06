@@ -31,8 +31,8 @@
   <a href="https://www.facebook.com/AkiraSan2004/" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="MasterQuanh Facebook" height="30" width="40" />
   </a>
-  <a href="https://www.youtube.com/channel/UCn1wNhcEM-cBC6D_tCL3HMA" target="_blank" rel="noreferrer">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="MasterQuanh YouTube" height="30" width="40" />
+  <a href="https://www.linkedin.com/in/dang-quang-anh/" target="_blank" rel="noreferrer">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="MasterQuanh LinkedIn" height="30" width="40" />
   </a>
   <a href="https://t.me/MasterQuanh" target="_blank" rel="noreferrer">
     <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="MasterQuanh Telegram" height="30" width="40" />
