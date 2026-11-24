@@ -8,19 +8,14 @@
   </a>
 </p>
 
-```ts
-// akira.profile.ts — Quantitative Engineering & Private Capital
-export const profile = {
-  role:      ["Full-Stack Developer", "Systematic Trader", "Founder & Fund Manager"],
-  focus:     ["Trading Systems & Bots", "Market Structure & Macro", "Private Capital Management"],
-  coreStack: ["TypeScript", "NestJS", "React / Next.js", "PostgreSQL", "Pine Script"],
-  infra:     ["Docker", "AWS", "GraphQL", "Prisma", "Real-Time Market Telemetry"],
-  projects:  "https://github.com/masterquanh06",
-  contact:   "quanganhdang2004@gmail.com",
-} as const;
-```
+### About Me
 
-<br />
+- Building full-stack systems & automated trading bots (**NestJS, React, PostgreSQL, Pine Script**)
+- Focused on systematic trading, market structure analysis & **private fund management**
+- All of my projects are available at [github.com/masterquanh06](https://github.com/masterquanh06)
+- Reach out via [quanganhdang2004@gmail.com](mailto:quanganhdang2004@gmail.com)
+
+---
 
 <h3 align="center">Tech Stack</h3>
 
