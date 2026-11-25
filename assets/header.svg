@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="AKIRA — Systems, Trading, Capital">
+  <defs>
+    <!-- Rounded card clip -->
+    <clipPath id="header-clip">
+      <rect x="1" y="1" width="1198" height="258" rx="14" />
+    </clipPath>
+
+    <!-- Deep obsidian dark base -->
+    <linearGradient id="bg-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E14" />
+      <stop offset="50%" stop-color="#110B0E" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <!-- Smooth drifting crimson aurora orbs -->
+    <radialGradient id="orb-crimson-main" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.42" />
+      <stop offset="45%" stop-color="#991B1B" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orb-crimson-deep" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.30" />
+      <stop offset="50%" stop-color="#7F1D1D" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orb-ruby-accent" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F87171" stop-opacity="0.22" />
+      <stop offset="55%" stop-color="#450A0A" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Layered liquid silk wave fills -->
+    <linearGradient id="wave-fill-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#450A0A" stop-opacity="0.05" />
+      <stop offset="35%" stop-color="#991B1B" stop-opacity="0.28" />
+      <stop offset="70%" stop-color="#DC2626" stop-opacity="0.34" />
+      <stop offset="100%" stop-color="#450A0A" stop-opacity="0.06" />
+    </linearGradient>
+
+    <linearGradient id="wave-fill-2" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7F1D1D" stop-opacity="0.04" />
+      <stop offset="40%" stop-color="#DC2626" stop-opacity="0.20" />
+      <stop offset="75%" stop-color="#991B1B" stop-opacity="0.26" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Thin luminous wave crest stroke -->
+    <linearGradient id="crest-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0" />
+      <stop offset="30%" stop-color="#EF4444" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#FCA5A5" stop-opacity="0.65" />
+      <stop offset="70%" stop-color="#EF4444" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Animated metallic-crimson shimmer gradient for AKIRA text -->
+    <linearGradient id="akira-shimmer" x1="-400" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="35%" stop-color="#FFFFFF" />
+      <stop offset="48%" stop-color="#FCA5A5" />
+      <stop offset="56%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+      <animate attributeName="x1" values="-400;1200" dur="5.2s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="400;2000" dur="5.2s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Center accent underline gradient -->
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0" />
+      <stop offset="25%" stop-color="#DC2626" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#FCA5A5" stop-opacity="1" />
+      <stop offset="75%" stop-color="#DC2626" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Border subtle sheen -->
+    <linearGradient id="border-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#7F1D1D" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Subtle micro-dot architectural grid -->
+    <pattern id="dot-matrix" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="16" r="0.85" fill="#484F58" opacity="0.45" />
+    </pattern>
+
+    <!-- Soft crimson glow behind AKIRA text -->
+    <filter id="text-aura" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+      </feMerge>
+    </filter>
+
+    <filter id="soft-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .orb-1 {
+      animation: driftOne 14s ease-in-out infinite alternate;
+      transform-origin: 600px 130px;
+    }
+    .orb-2 {
+      animation: driftTwo 18s ease-in-out infinite alternate;
+      transform-origin: 600px 130px;
+    }
+    .orb-3 {
+      animation: driftThree 12s ease-in-out infinite alternate;
+      transform-origin: 600px 130px;
+    }
+    .wave-slow {
+      animation: waveSlideA 16s ease-in-out infinite alternate;
+    }
+    .wave-mid {
+      animation: waveSlideB 11s ease-in-out infinite alternate;
+    }
+    .aura-pulse {
+      animation: auraBreathe 4.5s ease-in-out infinite;
+    }
+    .title-float {
+      animation: gentleFloat 6s ease-in-out infinite;
+    }
+    .line-pulse {
+      animation: lineBreathe 4.5s ease-in-out infinite;
+      transform-origin: 600px 168px;
+    }
+    .ember-1 { opacity: 0; animation: emberRise 7s ease-in-out infinite; }
+    .ember-2 { opacity: 0; animation: emberRise 9s ease-in-out 1.8s infinite; }
+    .ember-3 { opacity: 0; animation: emberRise 8s ease-in-out 3.2s infinite; }
+    .ember-4 { opacity: 0; animation: emberRise 10s ease-in-out 0.9s infinite; }
+    .ember-5 { opacity: 0; animation: emberRise 7.5s ease-in-out 4.5s infinite; }
+    .ember-6 { opacity: 0; animation: emberRise 8.5s ease-in-out 2.4s infinite; }
+
+    @keyframes driftOne {
+      0%   { transform: translate(-110px, -18px) scale(1); }
+      50%  { transform: translate(60px, 14px) scale(1.08); }
+      100% { transform: translate(140px, -12px) scale(0.96); }
+    }
+    @keyframes driftTwo {
+      0%   { transform: translate(130px, 20px) scale(1.04); }
+      50%  { transform: translate(-40px, -16px) scale(0.95); }
+      100% { transform: translate(-150px, 12px) scale(1.1); }
+    }
+    @keyframes driftThree {
+      0%   { transform: translate(0px, 24px) scale(0.92); opacity: 0.65; }
+      50%  { transform: translate(40px, -18px) scale(1.12); opacity: 1; }
+      100% { transform: translate(-50px, 10px) scale(0.98); opacity: 0.7; }
+    }
+    @keyframes waveSlideA {
+      0%   { transform: translateX(-60px) translateY(4px); }
+      100% { transform: translateX(60px) translateY(-6px); }
+    }
+    @keyframes waveSlideB {
+      0%   { transform: translateX(55px) translateY(-4px); }
+      100% { transform: translateX(-55px) translateY(6px); }
+    }
+    @keyframes auraBreathe {
+      0%, 100% { opacity: 0.35; }
+      50%      { opacity: 0.78; }
+    }
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(-2.5px); }
+    }
+    @keyframes lineBreathe {
+      0%, 100% { transform: scaleX(0.86); opacity: 0.65; }
+      50%      { transform: scaleX(1.06); opacity: 1; }
+    }
+    @keyframes emberRise {
+      0%   { transform: translateY(28px); opacity: 0; }
+      25%  { opacity: 0.75; }
+      75%  { opacity: 0.45; }
+      100% { transform: translateY(-48px); opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#header-clip)">
+    <!-- Obsidian Canvas -->
+    <rect width="1200" height="260" fill="url(#bg-base)" />
+
+    <!-- Subtle Dot Matrix Texture -->
+    <rect width="1200" height="260" fill="url(#dot-matrix)" opacity="0.65" />
+
+    <!-- Animated Crimson Mesh / Aurora Orbs -->
+    <ellipse class="orb-1" cx="620" cy="128" rx="440" ry="185" fill="url(#orb-crimson-main)" />
+    <ellipse class="orb-2" cx="840" cy="160" rx="380" ry="165" fill="url(#orb-crimson-deep)" />
+    <ellipse class="orb-3" cx="380" cy="110" rx="300" ry="140" fill="url(#orb-ruby-accent)" />
+
+    <!-- Layered Flowing Silk Crimson Waves -->
+    <g class="wave-slow">
+      <path
+        d="M -120 220 C 140 176, 360 248, 620 206 C 880 164, 1080 234, 1340 190 L 1340 280 L -120 280 Z"
+        fill="url(#wave-fill-1)"
+      />
+      <path
+        d="M -120 220 C 140 176, 360 248, 620 206 C 880 164, 1080 234, 1340 190"
+        fill="none"
+        stroke="url(#crest-stroke)"
+        stroke-width="1.2"
+      />
+    </g>
+
+    <g class="wave-mid">
+      <path
+        d="M -120 232 C 180 256, 420 194, 700 224 C 960 252, 1120 198, 1340 218 L 1340 280 L -120 280 Z"
+        fill="url(#wave-fill-2)"
+      />
+      <path
+        d="M -120 232 C 180 256, 420 194, 700 224 C 960 252, 1120 198, 1340 218"
+        fill="none"
+        stroke="url(#crest-stroke)"
+        stroke-width="0.9"
+        opacity="0.7"
+      />
+    </g>
+
+    <!-- Subtle Floating Luminous Embers -->
+    <circle class="ember-1" cx="240" cy="180" r="1.6" fill="#FCA5A5" />
+    <circle class="ember-2" cx="410" cy="200" r="1.2" fill="#EF4444" />
+    <circle class="ember-3" cx="775" cy="195" r="1.5" fill="#F87171" />
+    <circle class="ember-4" cx="935" cy="175" r="1.8" fill="#FCA5A5" />
+    <circle class="ember-5" cx="530" cy="210" r="1.1" fill="#FFFFFF" />
+    <circle class="ember-6" cx="1055" cy="190" r="1.3" fill="#EF4444" />
+
+    <!-- Minimal Corner Framing Brackets (Quant Terminal Signature) -->
+    <g stroke="#EF4444" stroke-width="1.2" opacity="0.38" fill="none">
+      <path d="M 28 42 L 28 28 L 42 28" />
+      <path d="M 1172 42 L 1172 28 L 1158 28" />
+      <path d="M 28 218 L 28 232 L 42 232" />
+      <path d="M 1172 218 L 1172 232 L 1158 232" />
+    </g>
+
+    <!-- Centerpiece Animated AKIRA Typography -->
+    <g class="title-float">
+      <!-- Breathing Crimson Glow Underlay -->
+      <text
+        class="aura-pulse"
+        x="609"
+        y="142"
+        text-anchor="middle"
+        font-family="'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="76"
+        font-weight="800"
+        letter-spacing="18"
+        fill="#EF4444"
+        filter="url(#text-aura)"
+      >AKIRA</text>
+
+      <!-- Crisp Metallic Shimmering AKIRA Text -->
+      <text
+        x="609"
+        y="142"
+        text-anchor="middle"
+        font-family="'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="76"
+        font-weight="800"
+        letter-spacing="18"
+        fill="url(#akira-shimmer)"
+      >AKIRA</text>
+    </g>
+
+    <!-- Breathing Luminous Crimson Accent Line -->
+    <rect class="line-pulse" x="420" y="166" width="360" height="1.8" rx="1" fill="url(#accent-line)" />
+
+    <!-- Subtle Tracked Monospace Tagline -->
+    <text
+      x="602"
+      y="196"
+      text-anchor="middle"
+      font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      font-size="11.5"
+      font-weight="500"
+      letter-spacing="4.8"
+      fill="#9CA3AF"
+    >SYSTEMS<tspan fill="#EF4444">  ·  </tspan>TRADING<tspan fill="#EF4444">  ·  </tspan>CAPITAL</text>
+  </g>
+
+  <!-- Subtle Hairline Outer Border -->
+  <rect x="1" y="1" width="1198" height="258" rx="14" fill="none" stroke="url(#border-sheen)" stroke-width="1.2" />
+</svg>

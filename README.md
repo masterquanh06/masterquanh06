@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,55:7F1D1D,100:DC2626&height=180&section=header&text=AKIRA&fontSize=60&fontColor=ffffff&fontAlignY=38" width="100%" alt="AKIRA Header" />
+  <img src="./assets/header.svg" width="100%" alt="AKIRA Header" />
 </p>
 
 <p align="center">
